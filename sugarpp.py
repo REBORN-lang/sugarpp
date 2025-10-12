@@ -58,10 +58,15 @@ with outp.open('w') as f_out:
         l = lines[i].rstrip('\n')
         next_line = lines[i+1].strip() if i+1 < len(lines) else ''
 
-        m_ctrl = ctrl_pattern.match(l)
+        l = re.sub(r'^\s*elif\s+', 'else if ', l)
+
+        m_ctrl = re.match(r'^(\s*)(else\s+)?(if|while|for|switch)\s+([^{(].*?)\s*\{?$', l)
         if m_ctrl:
-            cond = m_ctrl.group(3).strip()
-            l = f"{m_ctrl.group(1)}{m_ctrl.group(2)} ({cond})"
+            indent = m_ctrl.group(1)
+            else_part = m_ctrl.group(2) or ''
+            keyword = m_ctrl.group(3)
+            cond = m_ctrl.group(4).strip()
+            l = f"{indent}{else_part}{keyword} ({cond})"
             if not l.rstrip().endswith('{') and next_line != '{':
                 l += '{'
 
@@ -90,9 +95,7 @@ with outp.open('w') as f_out:
             return f"{kw}{m.group(4)} {m.group(3)}" + (f" = {m.group(5)};" if m.group(5) else ";")
 
         l = let_typed_pattern.sub(repl_typed, l)
-
         l = let_infer_pattern.sub(lambda m: f"{m.group(1)}auto {m.group(2)} = {m.group(3)};", l)
-
         l = let_plain_pattern.sub(lambda m: f"{m.group(1)}auto {m.group(2)};", l)
 
         f_out.write(l + '\n')
