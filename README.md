@@ -28,5 +28,5 @@ There is a simple [Neovim](https://neovim.io) syntax highlighting plugin for `.s
 -> [Link to guide](https://github.com/REBORN-lang/.github/blob/main/misc/SugarppNeovimThemeGuide.md)
 
 &nbsp;
-##### Maintainers
+### Maintainers
 - jstmax! : <jstmaxlol@disroot.org> & <maxwasmailed@proton.me>
