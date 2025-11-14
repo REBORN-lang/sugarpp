@@ -26,3 +26,7 @@ You can find other examples in this repo, more specifically, in the `examples/` 
 # Extras
 There is a simple [Neovim](https://neovim.io) syntax highlighting plugin for `.spp` (**sugar++**) files.
 -> [Link to guide](https://github.com/REBORN-lang/.github/blob/main/misc/SugarppNeovimThemeGuide.md)
+
+&nbsp;
+##### Maintainers
+- jstmax! : <jstmaxlol@disroot.org> & <maxwasmailed@proton.me>
