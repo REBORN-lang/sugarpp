@@ -1,5 +1,6 @@
 # sugar++
-**sugar++** (or **sugarpp**) is a tiny transpiler for [Reborn](https://github.com/REBORN-lang)-like syntactic sugar in **C++23**
+**sugar++** (or **sugarpp**) is a tiny transpiler for [Reborn](https://github.com/REBORN-lang)-like syntactic sugar in **C++23** \
+**Note:** Sugar++ now also supports transpiling to C programs.
 
 ## Guide
 Here you will learn how to create a simple program in the **sugar++** syntax.
@@ -29,4 +30,4 @@ There is a simple [Neovim](https://neovim.io) syntax highlighting plugin for `.s
 
 &nbsp;
 ### Maintainers
-- jstmax! : <jstmaxlol@disroot.org> & <maxwasmailed@proton.me>
+- czjstmax : <jstmaxlol@disroot.org>, <maxwasmailed@proton.me>

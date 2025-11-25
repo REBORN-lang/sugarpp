@@ -24,7 +24,8 @@ main: int() {
 	result = calculate(n1, op, n2);
 
 	std::print("{}{}{} = {}\n", n1, op, n2, result);
-
+    
+    return 0;
 }
 
 let calculate: double(n1: double&, op: char&, n2: double&) {
@@ -41,7 +42,7 @@ let calculate: double(n1: double&, op: char&, n2: double&) {
 		return (n1 / n2);
 	}
 	elif op == '^' {
-		return (std::pow(n1, n2););
+		return (std::pow(n1, n2));
 	}
 
 	return -1;

@@ -1,5 +1,4 @@
-// Transpiled by sugar++
-// Indentation kinda broken, will be working on a fix
+// C++23 Calculator transpiled by Sugar++  -  this comment was added manually
 #include <print>
 #include <iostream>
 #include <cmath>
@@ -17,16 +16,17 @@ double result = 0.0;
 	std::print("Xyz\nX? ");
 	std::cin >> n1;
 
-	std::print("{}Yz\nY? ", n1);
+	std::print("{}Yz\nY?", n1);
 	std::cin >> op;
 	
-	std::print("{}{}Z\nZ? ", n1, op);
+	std::print("{}{}Z\nZ?", n1, op);
 	std::cin >> n2;
 
 	result = calculate(n1, op, n2);
 
 	std::print("{}{}{} = {}\n", n1, op, n2, result);
-
+    
+    return 0;
 }
 
 double calculate(double& n1, char& op, double& n2){
