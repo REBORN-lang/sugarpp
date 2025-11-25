@@ -14,7 +14,7 @@ We recommend using the `<print>` header added in the [**ISO C++23 Standard**](ht
 include print
 
 
-main: int() {
+let main: int() {
 	std::println("Hello, World!");
 	return 0;
 }
