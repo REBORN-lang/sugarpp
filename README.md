@@ -26,8 +26,8 @@ let main: int() {
 	return 0;
 }
 ```
-Then, to compile we are gonna need to actually transpile the **s++** code to **C++** (or **C**). \
-To do that we are gonna use the **sugar++** [Python](https://www.python.org/) transpiler which you can find [here](https://github.com/REBORN-lang/sugarpp/blob/main/sugarpp.py) in this repo. \
+Then, to compile this program we are gonna need to \ actually transpile the **s++**/**sc** code to **C++**/**C** (or **C**) first. \
+We are going to use the **sugar++** [Python](https://www.python.org/) transpiler which you can find [here](https://github.com/REBORN-lang/sugarpp/blob/main/sugarpp.py) in this repo. \
 The syntax is simple: `sugarpp <input_file.spp> <output_file.cpp | output_file.c>` \
 And with that we got a standard `.cpp`/`.c` file we can compile with `g++`/`gcc`, `clang++`/`clang` or any other **C++**/**C** compiler.
 
