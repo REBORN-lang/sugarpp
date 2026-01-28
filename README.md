@@ -18,7 +18,7 @@ let main: int() {
 ```
 And as for C we can do:
 ```c
-// hello_world.spp
+// hello_world.sc
 include stdio.h
 
 let main: int() {
