@@ -1,8 +1,11 @@
-# sugar++
+<img width="600" height="175" alt="spp" src="https://github.com/user-attachments/assets/486ccb09-8722-4a37-a359-177691b6422f" />
+
+## sugarpp
+
 **sugar++** (or **sugarpp**) is a tiny transpiler for [Reborn](https://github.com/REBORN-lang)-like syntactic sugar in **C++23** \
 **Note:** Sugar++ now also supports transpiling to C programs.
 
-## Guide
+## guide
 Here you will learn how to create a simple program in the **sugar++** syntax.
 
 ### Hello World program
@@ -31,14 +34,14 @@ We are going to use the **sugar++** [Python](https://www.python.org/) transpiler
 The syntax is simple: `sugarpp <input_file.spp> <output_file.cpp | output_file.c>` \
 And with that we got a standard `.cpp`/`.c` file we can compile with `g++`/`gcc`, `clang++`/`clang` or any other **C++**/**C** compiler.
 
-### Other examples
+### other examples
 You can find other examples in this repo, more specifically, in the `examples/` directory.
 
-# Extras
+# extras
 There is a simple [Neovim](https://neovim.io) syntax highlighting plugin for `.spp` (**sugar++**) files.
 -> [Link to guide](https://github.com/REBORN-lang/.github/blob/main/misc/SugarppNeovimThemeGuide.md)
 
-## Missing features (Will NOT be worked on)
+## missing features (will NOT be worked on)
 You cannot declare/define an untyped function, unlike Reborn, example:
 ```
 let function := () { ... }
